@@ -1,4 +1,4 @@
-Microsoft Active Directory Logo
+<img width="300" height="168" alt="image" src="https://github.com/user-attachments/assets/95a06a12-1621-411c-b799-60cdbf0b5250" />
 
 Configuring Active Directory (On-Premises) Within Azure
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.
