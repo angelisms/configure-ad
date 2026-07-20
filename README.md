@@ -24,6 +24,9 @@ Deployment and Configuration Steps
 Setup Resources in Azure
 
 Create the Domain Controller VM (Windows Server 2022) named “DC-1”:
+<img width="2876" height="1564" alt="image" src="https://github.com/user-attachments/assets/24dc7d0a-798b-4d12-9822-5c6552db32fe" />
+<img width="2880" height="1562" alt="image" src="https://github.com/user-attachments/assets/dabf4c39-af9a-4290-b1c4-807a3e0a6748" />
+
 
 resource group vm ms server
 
