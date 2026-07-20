@@ -28,15 +28,14 @@ Create the Domain Controller VM (Windows Server 2022) named “DC-1”:
 <img width="2880" height="1562" alt="image" src="https://github.com/user-attachments/assets/dabf4c39-af9a-4290-b1c4-807a3e0a6748" />
 
 
-resource group vm ms server
 
 Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in previous step:
 
-vm windows
+<img width="2880" height="1564" alt="image" src="https://github.com/user-attachments/assets/49254693-d7f6-4b2c-b9d4-ebaf2b8bfaf2" />
 
 Set Domain Controller’s NIC Private IP address to be static:
 
-static ip
+<img width="2852" height="1564" alt="image" src="https://github.com/user-attachments/assets/00b880c6-efe5-4d9d-9a78-1bb75f8e0ca3" />
 
 Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher):
 
