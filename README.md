@@ -8,7 +8,7 @@
 
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.
 
-Environments and Technologies Used
+**Environments and Technologies Used**
 
 Microsoft Azure (Virtual Machines/Compute)
 
@@ -18,22 +18,29 @@ Active Directory Domain Services
 
 PowerShell
 
-Operating Systems Used
+**Operating Systems Used**
 
 Windows Server 2022
 
 Windows 10
 
-High-Level Deployment and Configuration Steps
+**High-Level Deployment and Configuration Steps**
 
 Create Resources
+
 Ensure Connectivity between the client and Domain Controller
+
 Install Active Directory
+
 Create an Admin and Normal User Account in AD
+
 Join Client-1 to your domain (myadproject.com)
+
 Setup Remote Desktop for non-administrative users on Client-1
+
 Create additional users and attempt to log into client-1 with one of the users
-Deployment and Configuration Steps
+
+*Deployment and Configuration Steps*
 
 
 Setup Resources in Azure
