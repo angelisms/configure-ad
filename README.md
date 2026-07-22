@@ -1,9 +1,8 @@
 <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/95a06a12-1621-411c-b799-60cdbf0b5250" />
 <div align="center">
-
-**Configuring Active Directory (On-Premises) Within Azure**
-
+  <h1>Configuring Active Directory (On-Premises) Within Azure</h1>
 </div>
+
 
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.
 Environments and Technologies Used
