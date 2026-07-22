@@ -81,39 +81,40 @@ Check back at Client-1 to see the ping succeed:
 <img width="1720" height="738" alt="image" src="https://github.com/user-attachments/assets/d7d89628-6e8a-487c-a8e4-867965a933b8" />
 
 
-Install Active Directory
+<p align="center"><b>Install Active Directory</b></p>
 
 Login to DC-1 and install Active Directory Domain Services:
+<img width="2876" height="1716" alt="image" src="https://github.com/user-attachments/assets/17552eca-9b8c-4502-964a-d746faa58b84" />
 
-active directory install
 
 Promote as a Domain Controller:
 
-domain controller promotion
+<img width="2872" height="1722" alt="image" src="https://github.com/user-attachments/assets/4a111e7c-1725-48c7-83d7-a1e0a91fec6e" />
 
 Setup a new forest as myactivedirectory.com (can be anything, just remember what it is - I ultimately did set it up as myadproject.com which you'll see in the next pic):
 
-set new forest
+<img width="2874" height="1716" alt="image" src="https://github.com/user-attachments/assets/d4605398-e6fc-4c4c-9614-2bb3f6e03a5d" />
+
 
 Restart and then log back into DC-1 as user: myadproject.com\labuser:
 
-fqdn login
 
 
-
-Create an Admin and Normal User Account in AD
+<div align="center"><b>Create an Admin and Normal User Account in AD</b></div>
 
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES” and another one called "_ADMINS":
 
-organizational unit organizational unit
+<img width="2880" height="1720" alt="image" src="https://github.com/user-attachments/assets/5152e451-b774-40e2-8cdc-b3cb0fcd2c1b" />
+<img width="2866" height="1720" alt="image" src="https://github.com/user-attachments/assets/6bc0ef80-e65f-4d38-a100-e5f43243b663" />
 
 Create a new employee named “Jane Doe” with the username of “jane_admin”:
 
-admin creation
+<img width="1530" height="1062" alt="image" src="https://github.com/user-attachments/assets/6443b955-1e88-4b1e-bbfb-b25ffec74a2c" />
+
 
 Add jane_admin to the “Domain Admins” Security Group:
 
-security group
+<img width="2142" height="1378" alt="image" src="https://github.com/user-attachments/assets/48f788f1-3a2f-4aaa-bb62-7057c441ed97" />
 
 Log out/close the Remote Desktop connection to DC-1 and log back in as “myadproject.com\jane_admin”. Use jane_admin as your admin account from now on:
 
@@ -121,27 +122,29 @@ admin login
 
 
 
-Join Client-1 to your domain (myadproject.com)
+<p align="center">
+  <b>Join Client-1 to your domain (myadproject.com)</b>
+</p>
 
 From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address:
 
-client dns settings
+<img width="2876" height="1564" alt="image" src="https://github.com/user-attachments/assets/33858d29-bbe6-4d08-ae1d-d3dfbafe1dcc" />
 
 From the Azure Portal, restart Client-1.
 
 Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart):
 
-domain joining
+<img width="2874" height="1714" alt="image" src="https://github.com/user-attachments/assets/6bbb04ae-6904-4743-8b72-ad58dcbb5860" />
 
 Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain.
 
 Create a new OU named “_CLIENTS” and drag Client-1 into there:
 
-active directory client verification
+<img width="2840" height="1718" alt="image" src="https://github.com/user-attachments/assets/bd9c6f99-cc0b-4bfa-8b91-d9c69bc11e06" />
 
 
 
-Setup Remote Desktop for non-administrative users on Client-1
+<p align="center"><b>Setup Remote Desktop for non-administrative users on Client-1</b></p>
 
 Log into Client-1 as mydomain.com\jane_admin and open system properties.
 
@@ -153,7 +156,7 @@ You can now log into Client-1 as a normal, non-administrative user now.
 
 Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab):
 
-remote desktop setup
+<img width="2878" height="1716" alt="image" src="https://github.com/user-attachments/assets/618c2698-7ae7-43e8-8bea-2f8af1d6c301" />
 
 
 
@@ -165,15 +168,16 @@ Open PowerShell_ise as an administrator.
 
 Create a new File and paste the contents of this script (https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1) into it:
 
-create users script
+<img width="2582" height="1502" alt="image" src="https://github.com/user-attachments/assets/d87bce56-9d93-4265-8014-f68e30101b0f" />
 
 Run the script and observe the accounts being created:
 
-observe create users script
+<img width="2878" height="1712" alt="image" src="https://github.com/user-attachments/assets/612f22cb-73bf-4e14-a65a-cdd8760fa9b6" />
 
 When finished, open ADUC and observe the accounts in the appropriate OU and attempt to log into Client-1 with one of the accounts (take note of the password in the script):
 
-employee user accounts employee user selection employee user login
+<img width="2840" height="1720" alt="image" src="https://github.com/user-attachments/assets/804e9c43-4677-4576-95bf-31e21da14b5e" />
+<img width="2846" height="1800" alt="image" src="https://github.com/user-attachments/assets/98c27854-5e85-42a1-8f3d-8d3ef98ed67c" />
 
 
 
