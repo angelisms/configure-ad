@@ -39,7 +39,7 @@ Set Domain Controller’s NIC Private IP address to be static:
 
 Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher):
 
-topology
+<img width="2854" height="1556" alt="image" src="https://github.com/user-attachments/assets/bc505c42-e483-431f-81f0-bdbac085769c" />
 
 
 
@@ -47,16 +47,16 @@ Ensure Connectivity between the client and Domain Controller
 
 Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t (perpetual ping):
 
-perpetual ping
+<img width="1716" height="734" alt="image" src="https://github.com/user-attachments/assets/99ac2900-2bce-4770-9bbd-59c25c66ae7f" />
+
 
 Login to the Domain Controller and enable ICMPv4 in on the local windows firewall:
 
-enable ICMPv4
+<img width="2880" height="1568" alt="image" src="https://github.com/user-attachments/assets/e8d0f814-e274-4fa9-a1b0-81a0ae7f74a5" />
 
 Check back at Client-1 to see the ping succeed:
 
-ping success
-
+<img width="1720" height="738" alt="image" src="https://github.com/user-attachments/assets/d7d89628-6e8a-487c-a8e4-867965a933b8" />
 
 
 Install Active Directory
