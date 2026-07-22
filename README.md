@@ -1,37 +1,30 @@
-<p align="center">
-  <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/95a06a12-1621-411c-b799-60cdbf0b5250" />
-</p>
-<div align="center">
-  <h1>Configuring Active Directory (On-Premises) Within Azure</h1>
-</div>
+<p align="center"> <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/95a06a12-1621-411c-b799-60cdbf0b5250" /> </p> 
 
+<div align="center"> <h1>Configuring Active Directory (On-Premises) Within Azure</h1> </div> 
 
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.
+This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines. 
 
-<u>**Environments and Technologies Used**</u>
+## <u>**Environments and Technologies Used**</u> 
+* Microsoft Azure (Virtual Machines/Compute) 
+* Remote Desktop 
+* Active Directory Domain Services 
+* PowerShell 
 
-* Microsoft Azure (Virtual Machines/Compute)
-* Remote Desktop
-* Active Directory Domain Services
-* PowerShell
+## <u>**Operating Systems Used**</u> 
+* Windows Server 2022 
+* Windows 10 
 
-<u>**Operating Systems Used**</u>
+## <u>**High-Level Deployment and Configuration Steps**</u> 
+* Create Resources 
+* Ensure Connectivity between the client and Domain Controller 
+* Install Active Directory 
+* Create an Admin and Normal User Account in AD 
+* Join Client-1 to your domain (myadproject.com) 
+* Setup Remote Desktop for non-administrative users on Client-1 
+* Create additional users and attempt to log into client-1 with one of the users 
 
-* Windows Server 2022
-* Windows 10
+## <u>**Deployment and Configuration Steps**</u>
 
-<u>**High-Level Deployment and Configuration Steps**</u>
-
-* Create Resources
-* Ensure Connectivity between the client and Domain Controller
-* Install Active Directory
-* Create an Admin and Normal User Account in AD
-* Join Client-1 to your domain (myadproject.com)
-* Setup Remote Desktop for non-administrative users on Client-1
-* Create additional users and attempt to log into client-1 with one of the users
-
-
-<u>**Deployment and Configuration Steps**</u>
 
 
 <p align="center"><b>Setup Resources in Azure</b></p>
